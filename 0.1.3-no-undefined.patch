@@ -1,0 +1,11 @@
+--- origsrc/libwebp-0.1.3/src/Makefile.am	2011-09-22 15:53:30.000000000 -0500
++++ src/libwebp-0.1.3/src/Makefile.am	2011-10-17 19:26:04.149757800 -0500
+@@ -8,7 +8,7 @@ libwebp_la_LIBADD = dec/libwebpdecode.la
+                     enc/libwebpencode.la \
+                     utils/libwebputils.la \
+                     dsp/libwebpdsp.la
+-libwebp_la_LDFLAGS = -version-info 2:0:0
++libwebp_la_LDFLAGS = -version-info 2:0:0 -no-undefined
+ libwebpinclude_HEADERS = webp/types.h webp/decode.h webp/decode_vp8.h \
+                          webp/encode.h
+ libwebpincludedir = $(includedir)/webp
