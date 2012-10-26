@@ -1,3 +1,6 @@
+NAME="libwebp"
+VERSION=0.2.0
+RELEASE=2
 CATEGORY="Graphics"
 SUMMARY="WebP graphics format reference implementation"
 DESCRPITION="WebP is a new image format that provides lossy compression for
@@ -6,7 +9,7 @@ based on RIFF. The standalone libwebp library serves as a reference
 implementation for the WebP specification. Webmasters and web developers can
 use the WebP image format to create smaller and better looking images that can
 help make the web faster."
-HOMEPAGE="http://code.google.com/speed/webp/"
+HOMEPAGE="http://developers.google.com/speed/webp/"
 SRC_URI="http://webp.googlecode.com/files/${P}.tar.gz"
 PATCH_URI="01-no-undefined.patch"
 
