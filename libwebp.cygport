@@ -1,9 +1,9 @@
 NAME="libwebp"
-VERSION=0.2.0
-RELEASE=2
+VERSION=0.2.1
+RELEASE=1
 CATEGORY="Graphics"
 SUMMARY="WebP graphics format reference implementation"
-DESCRPITION="WebP is a new image format that provides lossy compression for
+DESCRIPTION="WebP is a new image format that provides lossy compression for
 photographic images. A WebP file consists of VP8 image data, and a container
 based on RIFF. The standalone libwebp library serves as a reference
 implementation for the WebP specification. Webmasters and web developers can
