@@ -1,7 +1,7 @@
 NAME="libwebp"
-VERSION=0.2.1
+VERSION=0.4.0
 RELEASE=1
-CATEGORY="Graphics"
+CATEGORY="Libs"
 SUMMARY="WebP graphics format reference implementation"
 DESCRIPTION="WebP is a new image format that provides lossy compression for
 photographic images. A WebP file consists of VP8 image data, and a container
@@ -10,17 +10,23 @@ implementation for the WebP specification. Webmasters and web developers can
 use the WebP image format to create smaller and better looking images that can
 help make the web faster."
 HOMEPAGE="http://developers.google.com/speed/webp/"
-SRC_URI="http://webp.googlecode.com/files/${P}.tar.gz"
-PATCH_URI="01-no-undefined.patch"
+SRC_URI="http://webp.googlecode.com/files/libwebp-${VERSION}.tar.gz"
 
-PKG_NAMES="${PN} ${PN}4 ${PN}-devel"
+PKG_NAMES="${NAME} ${NAME}5 ${NAME}mux1 ${NAME}demux1 ${NAME}decoder1 ${NAME}-devel"
+libwebp_CATEGORY="Graphics"
 libwebp_SUMMARY="${SUMMARY} (utilities)"
 libwebp_CONTENTS="usr/bin/*.exe usr/share/doc/ usr/share/man/man1/"
-libwebp4_CATEGORY="Libs"
-libwebp4_SUMMARY="${SUMMARY} (runtime)"
-libwebp4_CONTENTS="usr/bin/cygwebp-4.dll"
-libwebp_devel_CATEGORY="Libs"
+libwebp5_SUMMARY="${SUMMARY} (runtime)"
+libwebp5_CONTENTS="usr/bin/cygwebp-5.dll"
+libwebpmux1_SUMMARY="WebP container format library"
+libwebpmux1_CONTENTS="usr/bin/cygwebpmux-1.dll"
+libwebpdemux1_SUMMARY="WebP container format parser library"
+libwebpdemux1_CONTENTS="usr/bin/cygwebpdemux-1.dll"
+libwebpdecoder1_SUMMARY="WebP graphics decoder library"
+libwebpdecoder1_CONTENTS="usr/bin/cygwebpdecoder-1.dll"
 libwebp_devel_SUMMARY="${SUMMARY} (development)"
 libwebp_devel_CONTENTS="usr/include/ usr/lib/"
+
+CYGCONF_ARGS="--enable-libwebpmux --enable-libwebpdemux --enable-libwebpdecoder"
 
 KEEP_LA_FILES="none"
