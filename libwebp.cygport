@@ -1,5 +1,5 @@
 NAME="libwebp"
-VERSION=0.4.0
+VERSION=0.4.2
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="WebP graphics format reference implementation"
@@ -10,7 +10,7 @@ implementation for the WebP specification. Webmasters and web developers can
 use the WebP image format to create smaller and better looking images that can
 help make the web faster."
 HOMEPAGE="http://developers.google.com/speed/webp/"
-SRC_URI="http://webp.googlecode.com/files/libwebp-${VERSION}.tar.gz"
+SRC_URI="http://downloads.webmproject.org/releases/webp/libwebp-${VERSION}.tar.gz"
 
 PKG_NAMES="${NAME} ${NAME}5 ${NAME}mux1 ${NAME}demux1 ${NAME}decoder1 ${NAME}-devel"
 libwebp_CATEGORY="Graphics"
