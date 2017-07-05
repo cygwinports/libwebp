@@ -1,5 +1,5 @@
 NAME="libwebp"
-VERSION=0.4.4
+VERSION=0.6.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="WebP graphics format reference implementation"
@@ -10,23 +10,21 @@ implementation for the WebP specification. Webmasters and web developers can
 use the WebP image format to create smaller and better looking images that can
 help make the web faster."
 HOMEPAGE="http://developers.google.com/speed/webp/"
-SRC_URI="http://downloads.webmproject.org/releases/webp/libwebp-${VERSION}.tar.gz"
+SRC_URI="https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-${VERSION}.tar.gz"
 
-PKG_NAMES="${NAME} ${NAME}5 ${NAME}mux1 ${NAME}demux1 ${NAME}decoder1 ${NAME}-devel"
+PKG_NAMES="${NAME} ${NAME}7 ${NAME}mux3 ${NAME}demux2 ${NAME}decoder3 ${NAME}-devel"
 libwebp_CATEGORY="Graphics"
 libwebp_SUMMARY="${SUMMARY} (utilities)"
 libwebp_CONTENTS="usr/bin/*.exe usr/share/doc/ usr/share/man/man1/"
-libwebp5_SUMMARY="${SUMMARY} (runtime)"
-libwebp5_CONTENTS="usr/bin/cygwebp-5.dll"
-libwebpmux1_SUMMARY="WebP container format library"
-libwebpmux1_CONTENTS="usr/bin/cygwebpmux-1.dll"
-libwebpdemux1_SUMMARY="WebP container format parser library"
-libwebpdemux1_CONTENTS="usr/bin/cygwebpdemux-1.dll"
-libwebpdecoder1_SUMMARY="WebP graphics decoder library"
-libwebpdecoder1_CONTENTS="usr/bin/cygwebpdecoder-1.dll"
+libwebp7_SUMMARY="${SUMMARY} (runtime)"
+libwebp7_CONTENTS="usr/bin/cygwebp-7.dll"
+libwebpmux3_SUMMARY="WebP container format library"
+libwebpmux3_CONTENTS="usr/bin/cygwebpmux-3.dll"
+libwebpdemux2_SUMMARY="WebP container format parser library"
+libwebpdemux2_CONTENTS="usr/bin/cygwebpdemux-2.dll"
+libwebpdecoder3_SUMMARY="WebP graphics decoder library"
+libwebpdecoder3_CONTENTS="usr/bin/cygwebpdecoder-3.dll"
 libwebp_devel_SUMMARY="${SUMMARY} (development)"
 libwebp_devel_CONTENTS="usr/include/ usr/lib/"
 
 CYGCONF_ARGS="--enable-libwebpmux --enable-libwebpdemux --enable-libwebpdecoder"
-
-KEEP_LA_FILES="none"
