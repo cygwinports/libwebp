@@ -1,6 +1,6 @@
 NAME="libwebp"
 VERSION=0.6.1
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="WebP graphics format reference implementation"
 DESCRIPTION="WebP is a new image format that provides lossy compression for
